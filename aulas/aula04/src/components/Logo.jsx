@@ -1,6 +1,6 @@
-function Logo() {
+function Logo(props) {
     return (
-        <img src="https://www.svgrepo.com/show/325799/student-graduation-dance.svg" alt="Logo da Aplicação" />
+        <img src={props.imagem} alt={props.texto} />
     );
 }
 

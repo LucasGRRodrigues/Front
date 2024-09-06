@@ -1,6 +1,8 @@
 function Rodape() {
     return (
-        <footer>Copyright (C) 2024</footer>
+        <footer>
+            <p>opyright (C) 2024</p>
+        </footer>
     );
 }
 
