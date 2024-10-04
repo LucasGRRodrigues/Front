@@ -1,8 +1,8 @@
 function InputNome (props) {
-    const regra = {
+    const regras = {
         required: {value: true, message: "Nome é obrigatório"},
         maxLength: {value: 100, message: "O nome deve ter no máximo 100 caracteres"}
-    }
+    };
     return (
         <>
         <label htmlFor="nome">Nome</label>
