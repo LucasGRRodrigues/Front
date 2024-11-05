@@ -1,13 +1,13 @@
-import Conteudo from "../components/Conteudo";
-import Titulo from "../components/Titulo";
 import Menu from "../components/Menu";
+import FormPerfil from "../../../../aulas/aula07/src/pages/FormPerfil";
 
 function Perfil(props) {
     return (
-        <Conteudo>
-            <Titulo texto="Perfil do Usuário"/>
-            <Menu navegaPara={props.navegaPara}/>
-        </Conteudo>
+        <>
+        <h1>Perfil do Usuário</h1>
+        <Menu />
+        <FormPerfil />
+        </>
     );
 }
 

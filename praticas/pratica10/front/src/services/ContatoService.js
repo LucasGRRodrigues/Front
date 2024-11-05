@@ -21,7 +21,7 @@ function adicionar(contato) {
 }
 
 function atualizar(contato) {
-    return axios.put(`url/${contato.id}`,{contato.nome, contato.telefone})
+    return axios.put(`url/${contato.id}` ,{nome: contato.nome, telefone: contato.telefone})
     .then((response) => {return {sucesso: true, dados: response.data}})
     .catch((error) => {return {sucesso: false, mensagem: "Ocorreu um erro!"}}); 
 }
@@ -32,4 +32,4 @@ function remover(id) {
     .catch((error) => {return {sucesso: false, mensagem: "Ocorreu um erro!"}});
 }
 
-export default ContatoService;
+export {remover, atualizar, adicionar, buscarUm, buscarTodos}

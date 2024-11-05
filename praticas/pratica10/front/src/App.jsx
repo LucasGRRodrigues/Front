@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Editar from "./pages/Editar";
-import Lista from "./pages/Lista";
+import Lista from "./pages/Listar";
 import Novo from "./pages/Novo";
 import Erro404 from "./pages/Erro404";
 
@@ -17,11 +17,6 @@ function App() {
 
         </Routes>
       </BrowserRouter>
-      
-      <Novo></Novo>
-      <Lista></Lista>
-      <Editar></Editar>
-      <Erro404></Erro404>
     </>
   );
 }
